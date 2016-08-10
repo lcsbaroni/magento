@@ -1,17 +1,13 @@
-# lcsbaroni/alpine:nginx-5.6
+# lcsbaroni/magento:2.1
 
 NGINX and PHP image based on Alpine Linux
 
 Image is based on the oficial image of alpine
 
-## Docker image size
-
-[![](https://badge.imagelayers.io/lcsbaroni/alpine:nginx-5.6.svg)](https://imagelayers.io/?images=lcsbaroni/alpine:nginx-5.6 'NGINX with PHP 5.6')
-
 ## Docker image usage
 
 ```
-docker run [docker-options] lcsbaroni/alpine:nginx-5.6
+docker run [docker-options] lcsbaroni/magento:2.1
 ```
 
 ## Examples
@@ -19,20 +15,20 @@ docker run [docker-options] lcsbaroni/alpine:nginx-5.6
 Typical basic usage:
 
 ```
-docker run -it lcsbaroni/alpine:nginx-5.6
+docker run -it lcsbaroni/magento:2.1
 ```
 
 Typical usage in Dockerfile:
 
 ```
-FROM lcsbaroni/alpine:nginx-5.6
+FROM lcsbaroni/magento:2.1
 RUN echo "<?php phpinfo() ?>" > /var/www/localhost/htdocs/index.php
 ```
 
 Typical usage:
 
 ```
-docker run -it --link=somedb:db lcsbaroni/alpine:nginx-5.6
+docker run -it --link=somedb:db lcsbaroni/magento:2.1
 ```
 
 Typical usage on docker-compose:
