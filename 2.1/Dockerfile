@@ -50,6 +50,7 @@ RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/re
         php7-soap@testing \
         php7-xsl@testing \
         php7-xdebug@testing \
+        php7-zlib@testing \
         php7-zip@testing && \
     sed -i "s|;date.timezone =.*|date.timezone = ${TIMEZONE}|" /etc/php7/php.ini && \
     sed -i "s|memory_limit =.*|memory_limit = ${PHP_MEMORY_LIMIT}|" /etc/php7/php.ini && \
