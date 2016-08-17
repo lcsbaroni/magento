@@ -4,7 +4,7 @@ FROM alpine:3.4
 # Timezone
 ENV TIMEZONE America/Sao_Paulo
 ENV PHP_MEMORY_LIMIT 1024M
-ENV PHP_MAX_EXECUTION_TIME 300
+ENV PHP_MAX_EXECUTION_TIME 180000
 ENV MAX_UPLOAD 50M
 ENV PHP_MAX_FILE_UPLOAD 200
 ENV PHP_MAX_POST 100M
@@ -50,6 +50,7 @@ RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/re
         php7-soap@testing \
         php7-xsl@testing \
         php7-xdebug@testing \
+        php7-zlib@testing \
         php7-zip@testing && \
     sed -i "s|;date.timezone =.*|date.timezone = ${TIMEZONE}|" /etc/php7/php.ini && \
     sed -i "s|memory_limit =.*|memory_limit = ${PHP_MEMORY_LIMIT}|" /etc/php7/php.ini && \
@@ -58,6 +59,7 @@ RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/re
     sed -i "s|upload_max_filesize =.*|upload_max_filesize = ${MAX_UPLOAD}|" /etc/php7/php.ini && \
     sed -i "s|max_file_uploads =.*|max_file_uploads = ${PHP_MAX_FILE_UPLOAD}|" /etc/php7/php.ini && \
     sed -i "s|post_max_size =.*|max_file_uploads = ${PHP_MAX_POST}|" /etc/php7/php.ini && \
+    sed -i "s|display_errors =.*|display_errors = ON|" /etc/php7/php.ini && \
     sed -i "s/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/" /etc/php7/php.ini && \
     echo "xdebug.remote_enable=1" >> /etc/php7/conf.d/xdebug.ini && \
     echo "xdebug.remote_handler=dbgp" >> /etc/php7/conf.d/xdebug.ini && \
