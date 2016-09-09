@@ -12,46 +12,47 @@ ENV PHP_MAX_POST 100M
 ADD ./conf/nginx.runit /etc/service/nginx/run
 ADD ./conf/php7.runit /etc/service/php7/run
 
-RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
+RUN echo "@community http://nl.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
+    echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
     apk update && \
     apk upgrade && \
     apk add --update tzdata && \
     cp /usr/share/zoneinfo/${TIMEZONE} /etc/localtime && \
     echo "${TIMEZONE}" > /etc/timezone && \
     apk add --update \
-        runit@testing \
+        runit@community \
         nginx \
         curl \
         git \
         openssh-client \
-        php7@testing \
-        php7-dev@testing \
-        php7-curl@testing \
-        php7-common@testing \
-        php7-intl@testing \
-        php7-gd@testing \
-        php7-opcache@testing \
-        php7-openssl@testing \
-        php7-phar@testing \
-        php7-mcrypt@testing \
-        php7-mbstring@testing \
-        php7-mysqli@testing \
-        php7-json@testing \
-        php7-iconv@testing \
-        php7-session@testing \
-        php7-ctype@testing \
-        php7-dom@testing \
-        php7-pdo@testing \
-        php7-pdo_mysql@testing \
-        php7-fpm@testing  \
+        php7@community \
+        php7-dev@community \
+        php7-curl@community \
+        php7-common@community \
+        php7-intl@community \
+        php7-gd@community \
+        php7-opcache@community \
+        php7-openssl@community \
+        php7-phar@community \
+        php7-mcrypt@community \
+        php7-mbstring@community \
+        php7-mysqli@community \
+        php7-json@community \
+        php7-iconv@community \
+        php7-session@community \
+        php7-ctype@community \
+        php7-dom@community \
+        php7-pdo@community \
+        php7-pdo_mysql@community \
+        php7-fpm@community  \
         php7-redis@testing \
-        php7-bcmath@testing \
+        php7-bcmath@community \
         php7-amqp@testing \
-        php7-soap@testing \
-        php7-xsl@testing \
+        php7-soap@community \
+        php7-xsl@community \
         php7-xdebug@testing \
-        php7-zlib@testing \
-        php7-zip@testing && \
+        php7-zlib@community \
+        php7-zip@community && \
     sed -i "s|;date.timezone =.*|date.timezone = ${TIMEZONE}|" /etc/php7/php.ini && \
     sed -i "s|memory_limit =.*|memory_limit = ${PHP_MEMORY_LIMIT}|" /etc/php7/php.ini && \
     sed -i "s|max_execution_time =.*|max_execution_time = ${PHP_MAX_EXECUTION_TIME}|" /etc/php7/php.ini && \
@@ -72,7 +73,7 @@ RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/re
     curl --insecure -sS https://getcomposer.org/installer | php && \
     mv composer.phar /usr/bin/composer && \
     mkdir /etc/nginx/sites-enabled && \
-    adduser -u 1000 docker -D -s /bin/ash && \
+    adduser -u 1001 docker -D -s /bin/ash && \
     chown -R docker:docker /home/docker && \
     mkdir -p /etc/service && \
     chmod a+x /etc/service/nginx/run && \
