@@ -50,7 +50,6 @@ RUN echo "@community http://nl.alpinelinux.org/alpine/edge/community" >> /etc/ap
         php7-amqp@testing \
         php7-soap@community \
         php7-xsl@community \
-        php7-xdebug@testing \
         php7-zlib@community \
         php7-zip@community && \
     sed -i "s|;date.timezone =.*|date.timezone = ${TIMEZONE}|" /etc/php7/php.ini && \
@@ -62,13 +61,6 @@ RUN echo "@community http://nl.alpinelinux.org/alpine/edge/community" >> /etc/ap
     sed -i "s|post_max_size =.*|max_file_uploads = ${PHP_MAX_POST}|" /etc/php7/php.ini && \
     sed -i "s|display_errors =.*|display_errors = ON|" /etc/php7/php.ini && \
     sed -i "s/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/" /etc/php7/php.ini && \
-    echo "xdebug.remote_enable=1" >> /etc/php7/conf.d/xdebug.ini && \
-    echo "xdebug.remote_handler=dbgp" >> /etc/php7/conf.d/xdebug.ini && \
-    echo "xdebug.remote_mode=req" >> /etc/php7/conf.d/xdebug.ini && \
-    echo "xdebug.remote_port=9001" >> /etc/php7/conf.d/xdebug.ini && \
-    echo "xdebug.remote_autostart=1" >> /etc/php7/conf.d/xdebug.ini && \
-    echo "xdebug.remote_connect_back=1" >> /etc/php7/conf.d/xdebug.ini && \
-    echo "xdebug.remote_host="`/sbin/ip route|awk '/default/ { print $3 }'` >> /etc/php7/conf.d/xdebug.ini && \
     ln -sf /usr/bin/php7 /usr/bin/php && \
     curl --insecure -sS https://getcomposer.org/installer | php && \
     mv composer.phar /usr/bin/composer && \
