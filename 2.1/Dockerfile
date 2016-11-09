@@ -25,6 +25,7 @@ RUN echo "@community http://nl.alpinelinux.org/alpine/edge/community" >> /etc/ap
         curl \
         git \
         openssh-client \
+        varnish \
         php7@community \
         php7-dev@community \
         php7-curl@community \
