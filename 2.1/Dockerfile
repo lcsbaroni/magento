@@ -12,49 +12,52 @@ ENV PHP_MAX_POST 100M
 ADD ./conf/nginx.runit /etc/service/nginx/run
 ADD ./conf/php7.runit /etc/service/php7/run
 
-RUN echo "@community http://nl.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
-    echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" > /etc/apk/repositories \
+    && echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories \
+    && echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories && \
     apk update && \
     apk upgrade && \
     apk add --update tzdata && \
     cp /usr/share/zoneinfo/${TIMEZONE} /etc/localtime && \
     echo "${TIMEZONE}" > /etc/timezone && \
     apk add --update \
-        runit@community \
+        runit \
         nginx \
         curl \
         git \
         openssh-client \
         varnish \
-        php7@community \
-        php7-dev@community \
-        php7-curl@community \
-        php7-common@community \
-        php7-intl@community \
-        php7-gd@community \
-        php7-opcache@community \
-        php7-openssl@community \
-        php7-phar@community \
-        php7-mcrypt@community \
-        php7-mbstring@community \
-        php7-mysqli@community \
-        php7-json@community \
-        php7-iconv@community \
-        php7-session@community \
-        php7-ctype@community \
-        php7-dom@community \
-        php7-pdo@community \
-        php7-pdo_mysql@community \
-        php7-fpm@community  \
-        php7-redis@testing \
-        php7-bcmath@community \
-        php7-amqp@testing \
-        php7-soap@community \
-        php7-xsl@community \
-        php7-xdebug@testing \
-        php7-zlib@community \
-        php7-zip@community && \
-    sed -i "s|;date.timezone =.*|date.timezone = ${TIMEZONE}|" /etc/php7/php.ini && \
+        openssl \
+        php7 \
+        php7-dev \
+        php7-curl \
+        php7-common \
+        php7-intl \
+        php7-gd \
+        php7-opcache \
+        php7-phar \
+        php7-mcrypt \
+        php7-mbstring \
+        php7-mysqli \
+        php7-json \
+        php7-iconv \
+        php7-session \
+        php7-ctype \
+        php7-dom \
+        php7-pdo \
+        php7-pdo_mysql \
+        php7-fpm  \
+        php7-redis \
+        php7-bcmath \
+        php7-soap \
+        php7-xsl \
+        php7-xdebug \
+        php7-zlib \
+        php7-openssl \
+        php7-zip
+
+
+RUN sed -i "s|;date.timezone =.*|date.timezone = ${TIMEZONE}|" /etc/php7/php.ini && \
     sed -i "s|memory_limit =.*|memory_limit = ${PHP_MEMORY_LIMIT}|" /etc/php7/php.ini && \
     sed -i "s|max_execution_time =.*|max_execution_time = ${PHP_MAX_EXECUTION_TIME}|" /etc/php7/php.ini && \
     sed -i "s|max_input_time =.*|max_input_time = ${PHP_MAX_EXECUTION_TIME}|" /etc/php7/php.ini && \
