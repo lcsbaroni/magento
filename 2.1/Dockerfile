@@ -84,7 +84,7 @@ RUN sed -i "s|;date.timezone =.*|date.timezone = ${TIMEZONE}|" /etc/php7/php.ini
     curl --insecure -sS https://getcomposer.org/installer | php && \
     mv composer.phar /usr/bin/composer && \
     mkdir /etc/nginx/sites-enabled && \
-    adduser -u 1000 docker -D -s /bin/ash && \
+    adduser -u 1001 docker -D -s /bin/ash && \
     chown -R docker:docker /home/docker && \
     mkdir -p /etc/service && \
     chmod a+x /etc/service/nginx/run && \
