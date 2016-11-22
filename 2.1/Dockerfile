@@ -69,8 +69,8 @@ RUN sed -i "s|;date.timezone =.*|date.timezone = ${TIMEZONE}|" /etc/php7/php.ini
     sed -i "s|;realpath_cache_size =.*|realpath_cache_size = 32k|" /etc/php7/php.ini && \
     sed -i "s|realpath_cache_ttl =.*|realpath_cache_ttl = 7200|" /etc/php7/php.ini && \
     sed -i "s|output_buffering =.*|output_buffering = 4096|" /etc/php7/php.ini && \
-    sed -i "s|opcache.memory_consumption =.*|opcache.memory_consumption = 256|" /etc/php7/conf.d/00_opcache.ini && \
-    sed -i "s|opcache.max_accelerated_files =.*|opcache.max_accelerated_files = 10000|" /etc/php7/conf.d/00_opcache.ini && \
+    sed -i "s|opcache.memory_consumption =.*|opcache.memory_consumption = 512|" /etc/php7/conf.d/00_opcache.ini && \
+    sed -i "s|opcache.max_accelerated_files =.*|opcache.max_accelerated_files = 60000|" /etc/php7/conf.d/00_opcache.ini && \
     sed -i "s|opcache.max_wasted_percentage =.*|opcache.max_wasted_percentage = 10|" /etc/php7/conf.d/00_opcache.ini && \
     sed -i "s/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/" /etc/php7/php.ini && \
     echo "xdebug.remote_enable=1" >> /etc/php7/conf.d/xdebug.ini && \
