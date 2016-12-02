@@ -78,6 +78,7 @@ RUN sed -i "s|;date.timezone =.*|date.timezone = ${TIMEZONE}|" /etc/php7/php.ini
     echo "opcache.fast_shutdown=1" >> /etc/php7/conf.d/00_opcache.ini && \
     echo "opcache.enable_file_override=1" >> /etc/php7/conf.d/00_opcache.ini && \
     sed -i "s/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/" /etc/php7/php.ini && \
+    echo "zend_extension=xdebug.so" >> /etc/php7/conf.d/xdebug.ini && \
     echo "xdebug.remote_enable=1" >> /etc/php7/conf.d/xdebug.ini && \
     echo "xdebug.remote_handler=dbgp" >> /etc/php7/conf.d/xdebug.ini && \
     echo "xdebug.remote_mode=req" >> /etc/php7/conf.d/xdebug.ini && \
