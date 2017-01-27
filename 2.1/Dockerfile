@@ -1,5 +1,5 @@
 # Use Alpine Linux
-FROM alpine:3.4
+FROM alpine:3.5
 
 # Timezone
 ENV TIMEZONE America/Sao_Paulo
@@ -85,7 +85,7 @@ RUN sed -i "s|;date.timezone =.*|date.timezone = ${TIMEZONE}|" /etc/php7/php.ini
     echo "xdebug.remote_port=9001" >> /etc/php7/conf.d/xdebug.ini && \
     echo "xdebug.remote_autostart=1" >> /etc/php7/conf.d/xdebug.ini && \
     echo "xdebug.remote_connect_back=1" >> /etc/php7/conf.d/xdebug.ini && \
-    echo "xdebug.remote_host="`/sbin/ip route|awk '/default/ { print $3 }'` >> /etc/php7/conf.d/xdebug.ini && \
+    echo "xdebug.remote_host=docker.local" >> /etc/php7/conf.d/xdebug.ini && \
     ln -sf /usr/bin/php7 /usr/bin/php && \
     curl --insecure -sS https://getcomposer.org/installer | php && \
     mv composer.phar /usr/bin/composer && \
@@ -105,6 +105,7 @@ ADD ./conf/nginx.conf /etc/nginx/nginx.conf
 ADD ./conf/default.conf /etc/nginx/sites-enabled/default
 ADD ./conf/php-fpm.conf /etc/php7/php-fpm.conf
 ADD ./conf/www.conf /etc/php7/php-fpm.d/www.conf
+ADD ./run.sh /home/docker/run.sh
 
 # Set Workdir
 WORKDIR /www
@@ -112,4 +113,4 @@ WORKDIR /www
 # Expose ports
 EXPOSE 80 443
 
-CMD ["sh", "-c", "exec /sbin/runsvdir -P /etc/service/"]
+CMD ["/home/docker/run.sh"]
