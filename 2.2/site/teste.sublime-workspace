@@ -1,0 +1,958 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"stat",
+				"static"
+			],
+			[
+				"con",
+				"controller_path"
+			],
+			[
+				"che",
+				"check_path"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"pas",
+				"password"
+			],
+			[
+				"establishment-acc",
+				"establishment-account-edit"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"es",
+				"establishments"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"use",
+				"userRepository"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"ser",
+				"service"
+			],
+			[
+				"mysql",
+				"mysql_pconnect"
+			],
+			[
+				"fal",
+				"fale_conosco"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"strUr",
+				"strUrlRetorno"
+			],
+			[
+				"o",
+				"objResult"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"res",
+				"responseNvp"
+			],
+			[
+				"arr",
+				"arrWhere"
+			],
+			[
+				"COD",
+				"COD_PEDIDO"
+			],
+			[
+				"esc",
+				"escape"
+			],
+			[
+				"NUM",
+				"NUM_PEDIDO"
+			],
+			[
+				"check",
+				"checkout"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"da",
+				"dafiti"
+			],
+			[
+				"php",
+				"phpinfo"
+			],
+			[
+				"get",
+				"getenv"
+			],
+			[
+				"var",
+				"var_dump"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 16,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "teste.sublime-project",
+			"settings":
+			{
+				"buffer_size": 347,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{\n    \"folders\":\n    [\n        {\n            \"path\": \".\",\n            \"follow_symlinks\": true,\n        }\n    ],\n    \"settings\": {\n        \"xdebug\": {\n             \"url\": \"http://192.168.99.100:32907\",\n             \"path_mapping\": {\n                \"/www\" : \"/Users/lcsbaroni/frellas/docker-images/alpine/nginx-5.6/site\"\n            },\n        }\n    },\n    \"port\":9001\n}\n",
+			"settings":
+			{
+				"buffer_size": 370,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{\n    \"folders\":\n    [\n        {\n            \"path\": \".\",\n            \"follow_symlinks\": true,\n        }\n    ],\n    \"settings\": {\n        \"xdebug\": {\n             \"url\": \"0.0.0.0:8080\",\n        }\n    }\n}\n",
+			"settings":
+			{
+				"buffer_size": 204,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 267.0,
+		"last_filter": "inst",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			" import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/lcsbaroni/frellas/docker-images/alpine/nginx-5.6/site"
+	],
+	"file_history":
+	[
+		"/Users/lcsbaroni/Library/Application Support/Sublime Text 3/Packages/Xdebug Client/Xdebug.sublime-settings",
+		"/Users/lcsbaroni/Library/Application Support/Sublime Text 3/Packages/User/Xdebug.sublime-settings",
+		"/Users/lcsbaroni/frellas/docker-images/alpine/nginx-5.6/conf/www.conf",
+		"/Users/lcsbaroni/frellas/docker-images/alpine/nginx-5.6/conf/php.runit",
+		"/Users/lcsbaroni/frellas/docker-images/alpine/nginx-5.6/conf/php-fpm.conf",
+		"/Users/lcsbaroni/frellas/docker-images/alpine/nginx-5.6/conf/default.conf",
+		"/Users/lcsbaroni/frellas/docker-images/alpine/README.md",
+		"/Users/lcsbaroni/frellas/docker-images/alpine/apache-5.6/docker-compose.yml",
+		"/Users/lcsbaroni/frellas/docker-images/alpine/apache-5.6/Dockerfile",
+		"/Users/lcsbaroni/frellas/docker-images/alpine/nginx-5.6/README.md",
+		"/Users/lcsbaroni/frellas/docker-images/alpine/nginx-5.6/docker-compose.yml",
+		"/Users/lcsbaroni/frellas/docker-images/alpine/nginx-5.6/conf/nginx.conf",
+		"/Users/lcsbaroni/frellas/docker-images/alpine/apache-5.6/conf/supervisord.conf",
+		"/Users/lcsbaroni/frellas/docker-images/php/5.6/site/.htaccess",
+		"/Users/lcsbaroni/frellas/docker-images/php/dafiti/docker-compose.yml",
+		"/Users/lcsbaroni/frellas/docker-images/php/5.6/scripts/run.sh",
+		"/Users/lcsbaroni/frellas/docker-images/php/5.6/conf/custom.conf",
+		"/Users/lcsbaroni/frellas/docker-images/php/5.6/run.sh",
+		"/Users/lcsbaroni/frellas/docker-images/php/5.6/site/index.html",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/application/views/templates/site/topo.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/site/css/style.css",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/site/js/libs/facebook.js",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/site/controllers/clientes.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/config.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/application/helpers/MY_url.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/application/config/routes.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/application/views/templates/site/lateral_direita.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/site/views/clientes.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/site/views/como_funciona.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/site/views/index.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/site/views/layouts.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/site/views/layouts_exemplossites.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/site/views/planos_merge.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/site/views/quem_somos.php",
+		"/Users/lcsbaroni/Downloads/sitemap-3.xml",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/.htaccess",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/sitemap.xml",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/application/controllers/aplicacoes.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/application/controllers/base.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/site/views/templates/base/cabecalho.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/modulos/views/aplicacoes/breadcrumbs_merge.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/modulos/controllers/aplicacoes/breadcrumbs.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/schemas/sys/models/sys_menu.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/application/helpers/js.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/site/js/scripts.min.js",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/site/js/geral.min.js",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/site/js/jcarousel.min.js",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/site/js/jquery.form.min.js",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/site/css/libs/jquery-ui.min.css",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/system/controllers/template.php",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/site/js/mask.min.js",
+		"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site/system/libraries/Controller.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/EstablishmentBundle/Controller/BaseController.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/EstablishmentBundle/Controller/LoginController.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/EstablishmentBundle/Controller/IndexController.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/EstablishmentBundle/Controller/EstablishmentController.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/vendor/friendsofsymfony/user-bundle/Model/User.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/config/config.yml",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/Resources/views/base.html.twig",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/AppBundle/Resources/views/layout.html.twig",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/AppBundle/Resources/views/Security/login.html.twig",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/config/security.yml",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/EstablishmentBundle/Controller/BusinessHourController.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/Domain/Entity/User.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/config/services.yml",
+		"/Users/lcsbaroni/frellas/sites/thepet/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/ContainerAware.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/ContainerInterface.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/AdminBundle/AdminBundle.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/AppBundle/AppBundle.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/AppBundle/Resources/translations/FOSUserBundle.en.yml",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/Domain/Entity/Service.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/composer.json",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/Resources/views/establishment/account/signin.html.twig",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/Resources/views/establishment/account/merge.html.twig",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/Domain/Entity/Establishment.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/Resources/views/establishment/business-hour/index.html.twig",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/EstablishmentBundle/Controller/DefaultController.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/EstablishmentBundle/Controller/AccountController.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/Domain/Entity/BusinessHour.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/docs/dev/sqls.txt",
+		"/Users/lcsbaroni/frellas/sites/thepet/vendor/symfony/symfony/src/Symfony/Component/Form/Extension/Core/Type/PasswordType.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/vendor/symfony/symfony/src/Symfony/Component/Form/Extension/Core/Type/RepeatedType.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/AdminBundle/Controller/ServiceController.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/Resources/views/establishment/account/succes.html.twig",
+		"/Users/lcsbaroni/frellas/sites/thepet/web/assets/admin/css/custom.css",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/Domain/Repository/Account.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/Resources/views/establishment/establishment/merge.html.twig",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/Resources/views/establishment/establishment/list.html.twig",
+		"/Users/lcsbaroni/frellas/sites/thepet/web/assets/establishment/css/custom.css",
+		"/Users/lcsbaroni/frellas/sites/thepet/vendor/symfony/symfony/src/Symfony/Component/Form/Form.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/web/app_dev.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/AppKernel.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/web/adminstatic/bower_components/bootstrap/less/forms.less",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/Resources/views/admin/base.html.twig",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/Resources/views/establishment/base.html.twig",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/config/parameters.yml",
+		"/Users/lcsbaroni/frellas/sites/thepet/.gitignore",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/Resources/views/establishment/clean.html.twig",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/Domain/Repository/AbstractRepository.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/docker-compose.yml",
+		"/Users/lcsbaroni/frellas/sites/thepet/README.txt",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/Domain/Repository/Person.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/Domain/Repository/User.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/vendor/doctrine/orm/lib/Doctrine/ORM/AbstractQuery.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/Domain/Entity/Uid/UidFactory.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/Resources/views/admin/service/list.html.twig",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/Resources/views/admin/service/merge.html.twig",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/Resources/views/establishment/account/list.html.twig",
+		"/Users/lcsbaroni/frellas/sites/thepet/vendor/symfony/symfony/src/Symfony/Component/HttpFoundation/Session/Session.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/web/adminstatic/bower_components/bootstrap/dist/css/bootstrap.css",
+		"/Users/lcsbaroni/frellas/sites/thepet/web/adminstatic/bower_components/bootstrap/less/normalize.less",
+		"/Users/lcsbaroni/frellas/sites/thepet/web/adminstatic/dist/css/sb-admin-2.css",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/Domain/Entity/AnimalEspecie.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/src/Domain/Repository/Service.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/app/config/config_dev.yml",
+		"/Users/lcsbaroni/frellas/sites/thepet/web/.htaccess",
+		"/Users/lcsbaroni/frellas/sites/thepet/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/web/config.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/web/app.php",
+		"/Users/lcsbaroni/frellas/sites/thepet/web/index.php",
+		"/Users/lcsbaroni/frellas/sites/gestserv/site/pages/utils/send_push.php",
+		"/Users/lcsbaroni/frellas/sites/gestserv/site/index.html",
+		"/Users/lcsbaroni/frellas/sites/gestserv/site/.htaccess",
+		"/Users/lcsbaroni/frellas/sites/gestserv/site/pages/login.php",
+		"/Users/lcsbaroni/frellas/sites/gestserv/site/pages/utils/utils.php",
+		"/Users/lcsbaroni/Downloads/GESTSERV_DESENV.sql",
+		"/Users/lcsbaroni/frellas/sites/gestserv/site/pages/.htaccess"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/lcsbaroni/frellas/sites/futuro_casal2014/site",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"php7",
+			"abceletrolisear",
+			"7",
+			"Apache",
+			"apache-5.6",
+			"@testing",
+			"exec",
+			"#",
+			"php5",
+			"#",
+			"php7",
+			"331110700336303",
+			"395",
+			"42",
+			"facebook",
+			"staticxx",
+			"no-cache",
+			"redirectHomeController",
+			"clientes/add",
+			"view",
+			"variables_order",
+			"user_reposi",
+			"fos",
+			"transla",
+			"service",
+			"Service",
+			"service",
+			"form-control",
+			"form-group",
+			"form-group-margin-bottom",
+			"findByIdAndEntityName",
+			"userRepository",
+			"service",
+			"Service",
+			"service",
+			"account",
+			"body",
+			"admin",
+			"Operacao",
+			";\n",
+			"form",
+			"animals_especie_repository",
+			"animals-especie",
+			"cach",
+			"error_re",
+			"GESTSERV_DESENV",
+			"compos",
+			"intCod",
+			"cerca",
+			"Instalação",
+			"Manutenção",
+			"Ar ",
+			"Ar",
+			"Cerca elétrica",
+			"safsaf",
+			"safsafstring",
+			"ip",
+			"input",
+			"objPedidoParcelasModel",
+			"strUrl",
+			"objDadosPedido",
+			"$this->ci",
+			"user",
+			"geraCo",
+			"_",
+			"numero_documento",
+			"documento",
+			"$strPathDestino",
+			"#96c196",
+			"Orgulhosamente man",
+			"Orgulhosamente mantido com WordPress",
+			"3306",
+			"html/data/run",
+			"html/data/run/*.pid",
+			"dafi",
+			"code/alice",
+			"p-bo"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5,
+								5
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "teste.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 347,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								252,
+								312
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 370,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								370
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 204,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								204
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "teste.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"a",
+				"Azkfile.js"
+			],
+			[
+				"confi",
+				"config.php"
+			],
+			[
+				"clie",
+				"site/site/controllers/clientes.php"
+			],
+			[
+				"planos_pa",
+				"site/modulos/controllers/aplicacoes/planos_pagos.php"
+			],
+			[
+				"topo",
+				"site/application/views/templates/site/topo.php"
+			],
+			[
+				"site",
+				"site/sitemap.xml"
+			],
+			[
+				".ht",
+				"site/.htaccess"
+			],
+			[
+				"clien",
+				"site/site/controllers/clientes.php"
+			],
+			[
+				"route",
+				"site/application/config/routes.php"
+			],
+			[
+				"js.php",
+				"site/application/helpers/js.php"
+			],
+			[
+				"roda",
+				"site/application/views/templates/site/rodape.php"
+			],
+			[
+				"breadcrumb_me",
+				"site/modulos/views/aplicacoes/breadcrumbs_merge.php"
+			],
+			[
+				"bread",
+				"site/modulos/controllers/aplicacoes/breadcrumbs.php"
+			],
+			[
+				"config",
+				"config.php"
+			],
+			[
+				"cabe",
+				"site/site/views/templates/base/cabecalho.php"
+			],
+			[
+				"cabeca",
+				"site/application/views/templates/cabecalho.php"
+			],
+			[
+				"contro",
+				"site/system/libraries/Controller.php"
+			],
+			[
+				"/userbundle/model/user",
+				"vendor/friendsofsymfony/user-bundle/Model/User.php"
+			],
+			[
+				"user",
+				"src/Domain/Entity/User.php"
+			],
+			[
+				"vendor/symfony/symfony/src/symfony/bundle/frameworkbundle/controller/controller.php",
+				"vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Controller/Controller.php"
+			],
+			[
+				"use",
+				"src/Domain/Entity/User.php"
+			],
+			[
+				"acco",
+				"src/EstablishmentBundle/Controller/AccountController.php"
+			],
+			[
+				"fos/userbundle/model/user",
+				"vendor/friendsofsymfony/user-bundle/Model/User.php"
+			],
+			[
+				"comp",
+				"composer.json"
+			],
+			[
+				"esta",
+				"src/EstablishmentBundle/Controller/EstablishmentController.php"
+			],
+			[
+				"est",
+				"src/Domain/Entity/Establishment.php"
+			],
+			[
+				"servi",
+				"src/AdminBundle/Controller/ServiceController.php"
+			],
+			[
+				"service",
+				"src/AdminBundle/Controller/ServiceController.php"
+			],
+			[
+				"appkernel",
+				"app/AppKernel.php"
+			],
+			[
+				"app",
+				"web/app_dev.php"
+			],
+			[
+				".git",
+				".gitignore"
+			],
+			[
+				"forms",
+				"web/adminstatic/bower_components/bootstrap/less/forms.less"
+			],
+			[
+				"normal",
+				"web/adminstatic/bower_components/bootstrap/less/normalize.less"
+			],
+			[
+				"appke",
+				"app/AppKernel.php"
+			],
+			[
+				"solic",
+				"site/site/views/planos_solicitarcd.php"
+			],
+			[
+				"noivo",
+				"site/site/js/web/noivos.js"
+			],
+			[
+				"noivo_fin",
+				"site/site/views/templates/noivos_finalizar.php"
+			],
+			[
+				"noivos_pr",
+				"site/site/views/templates/noivos_produtos.php"
+			],
+			[
+				"planos_fi",
+				"site/site/views/planos_finalizar_cd.php"
+			],
+			[
+				"planos_s",
+				"site/site/views/planos_solicitarcd.php"
+			],
+			[
+				"pagamento_p",
+				"site/schemas/apl/models/apl_pagamento_planos.php"
+			],
+			[
+				"noivos_fi",
+				"site/site/views/templates/noivos_finalizar.php"
+			],
+			[
+				"planos_",
+				"site/site/views/planos_finalizar.php"
+			],
+			[
+				"planos.js",
+				"site/site/js/web/planos.js"
+			],
+			[
+				"planos",
+				"site/site/controllers/planos.php"
+			],
+			[
+				"controll",
+				"site/system/libraries/Controller.php"
+			],
+			[
+				"inpu",
+				"site/system/libraries/Input.php"
+			],
+			[
+				"pagination",
+				"site/system/libraries/Pagination.php"
+			],
+			[
+				"pagination.",
+				"site/system/libraries/Pagination.php"
+			],
+			[
+				"final",
+				"site/site/views/templates/noivos_finalizar.php"
+			],
+			[
+				"noivos.js",
+				"site/site/js/web/noivos.js"
+			],
+			[
+				"comprar_",
+				"site/site/views/templates/noivos_compra_presente.php"
+			],
+			[
+				"noi",
+				"site/site/controllers/noivos.php"
+			],
+			[
+				"rod",
+				"site/application/views/templates/site/rodape.php"
+			],
+			[
+				"site.",
+				"site/css/site.css"
+			],
+			[
+				"cursos",
+				"site/application/controllers/cursos.php"
+			],
+			[
+				"curso/d",
+				"site/application/views/site/curso/detalhe.php"
+			],
+			[
+				"uplo",
+				"site/system/helpers/upload.php"
+			],
+			[
+				"gd",
+				"site/system/libraries/drivers/Image/GD.php"
+			],
+			[
+				"clientes",
+				"site/site/controllers/clientes.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"129":
+				{
+					"group": 0,
+					"index": 3
+				},
+				"142":
+				{
+					"group": 0,
+					"index": 2
+				},
+				"98":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"99":
+				{
+					"group": 0,
+					"index": 1
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 234.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
