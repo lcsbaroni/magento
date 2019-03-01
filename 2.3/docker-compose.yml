@@ -1,0 +1,7 @@
+web:
+    image: lcsbaroni/magento:2.3
+    ports:
+        - "80:80"
+        - "443"
+    volumes:
+        - ./site:/var/www/magento2

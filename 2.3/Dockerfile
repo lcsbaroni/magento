@@ -1,5 +1,5 @@
 # Use Alpine Linux
-FROM alpine:3.8
+FROM alpine:3.9
 
 # Timezone
 ENV TIMEZONE America/Sao_Paulo
@@ -50,6 +50,10 @@ RUN apk update && \
         php7-xdebug \
         php7-zlib \
         php7-openssl \
+        php7-simplexml \
+        php7-tokenizer \
+        php7-xmlwriter \
+        php7-xml \
         php7-zip
 
 # RUN npm install -g grunt-cli
